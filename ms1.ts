@@ -26,7 +26,7 @@ function findperimeter(length:number, width:number):number{
   return 2 * (length + width);
 }
 console.log(findperimeter(5, 6));
-*/
+
 //challenge 4: Check Negative
 
 function isNegative(num:number) {
@@ -36,7 +36,8 @@ function isNegative(num:number) {
   return false;
 }
 console.log(isNegative(-5));
-/*
+
+*/
 //challenge 5: Can i drive
 
 function canDrive(name:string, age:number) {
@@ -46,7 +47,7 @@ function canDrive(name:string, age:number) {
   return name + " is not old enough to drive";
 }
 console.log(canDrive("mercy", 30));
-
+/*
 //challenge 6: Largest Number
 
 function findLargest(a:number, b:number, c:number) {
