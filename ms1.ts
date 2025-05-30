@@ -77,7 +77,7 @@ function calculateBMI(weight:number, height:number) {
   }
 }
 console.log(calculateBMI(70, 2));
-*/
+
 //challenge 8: Greeting Based On Time
 
 function greetUser(name:string, hour:number) {
@@ -92,8 +92,8 @@ function greetUser(name:string, hour:number) {
   }
 }
 console.log(greetUser("Susan", 10));
+*/
 
-/*
 //challenge 9 : fuzz buzz
 function fizzBuzzCheck(number:number) {
   if (number % 3 === 0 && number % 5 === 0) {
@@ -105,5 +105,5 @@ function fizzBuzzCheck(number:number) {
   } else {
     return number.toString();
   }
-}*/
+}
 
