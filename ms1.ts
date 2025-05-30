@@ -7,7 +7,7 @@
   console.log(x + y);
 }
 addition(); 
-*/
+
 //challenge 2: Convert Minutes into Seconds
 
 function convert() {
@@ -18,7 +18,8 @@ function convert() {
   console.log(minutes * Seconds);
 }
 convert();
-/*
+*/
+
 //challenge 3:  Perimeter of a Rectangle
 
 function findperimeter(length:number, width:number):number{
@@ -27,7 +28,7 @@ function findperimeter(length:number, width:number):number{
 console.log(findperimeter(5, 6));
 
 //challenge 4: Check Negative
-
+/*
 function isNegative(num:number) {
   if (num < 0) {
     return true;
