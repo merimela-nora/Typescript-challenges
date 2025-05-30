@@ -1,5 +1,5 @@
 //challenge 1:  Return the Sum of Two Numbers
-function addition(){
+/*function addition(){
   let x:number = 6; 
    let y :number = 4;
 
@@ -7,9 +7,9 @@ function addition(){
   console.log(x + y);
 }
 addition(); 
-
+*/
 //challenge 2: Convert Minutes into Seconds
-/*
+
 function convert() {
 
   let minutes:number = 5;
@@ -18,7 +18,7 @@ function convert() {
   console.log(minutes * Seconds);
 }
 convert();
-
+/*
 //challenge 3:  Perimeter of a Rectangle
 
 function findperimeter(length:number, width:number):number{
