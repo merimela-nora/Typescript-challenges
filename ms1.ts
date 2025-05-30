@@ -37,7 +37,7 @@ function isNegative(num:number) {
 }
 console.log(isNegative(-5));
 
-*/
+
 //challenge 5: Can i drive
 
 function canDrive(name:string, age:number) {
@@ -47,7 +47,7 @@ function canDrive(name:string, age:number) {
   return name + " is not old enough to drive";
 }
 console.log(canDrive("mercy", 30));
-/*
+ */
 //challenge 6: Largest Number
 
 function findLargest(a:number, b:number, c:number) {
@@ -60,7 +60,7 @@ function findLargest(a:number, b:number, c:number) {
   }
 }
 console.log(findLargest(10, 80, 70));
-
+/*
 //challenge 7: BMI Calculator
 
 function calculateBMI(weight:number, height:number) {
