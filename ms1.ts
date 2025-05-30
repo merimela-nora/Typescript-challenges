@@ -18,7 +18,7 @@ function convert() {
   console.log(minutes * Seconds);
 }
 convert();
-*/
+
 
 //challenge 3:  Perimeter of a Rectangle
 
@@ -26,9 +26,9 @@ function findperimeter(length:number, width:number):number{
   return 2 * (length + width);
 }
 console.log(findperimeter(5, 6));
-
+*/
 //challenge 4: Check Negative
-/*
+
 function isNegative(num:number) {
   if (num < 0) {
     return true;
@@ -36,7 +36,7 @@ function isNegative(num:number) {
   return false;
 }
 console.log(isNegative(-5));
-
+/*
 //challenge 5: Can i drive
 
 function canDrive(name:string, age:number) {
