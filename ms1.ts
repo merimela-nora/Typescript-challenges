@@ -167,3 +167,20 @@ function sumMultiples(n:number, divisor:number) {
   return sum;
 }
 console.log(sumMultiples(7, 5));
+
+
+//challenge 15:Sum of Digits
+
+function sumDigits(num:number) {
+  let sum = 0;
+
+  while (num > 0) {
+    let last = num % 10;
+    sum += last;
+    num = Math.floor(num / 10);
+  }
+
+  return sum;
+}
+
+console.log(sumDigits(123));
