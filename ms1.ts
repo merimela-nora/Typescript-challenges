@@ -117,3 +117,16 @@ function perimeter(shape:string, number:number) {
   }
 }
 console.log(perimeter("C", 6));
+
+//challenge 11 : Sum of Even Numbers
+
+function sumEvenNumbers(n:number) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(sumEvenNumbers(6));
