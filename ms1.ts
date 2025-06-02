@@ -130,3 +130,15 @@ function sumEvenNumbers(n:number) {
   return sum;
 }
 console.log(sumEvenNumbers(6));
+
+
+//challenge 12: Multiply by Itself
+
+function powerUp(num:number, times:number) {
+  let result = 1;
+  for (let i = 1; i <= times; i++) {
+    result *= num;
+  }
+  return result;
+}
+console.log(powerUp(6, 3));
