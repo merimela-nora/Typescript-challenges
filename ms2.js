@@ -178,3 +178,26 @@ function removeDuplicates(arr) {
     return result;
 }
 console.log(removeDuplicates([1, 2, 3, 1, 2, 3]));
+//challenge 16:Most Frequent
+function mostFrequent(arr) {
+    var count = {};
+    for (var i = 0; i < arr.length; i++) {
+        var num = arr[i];
+        if (count[num]) {
+            count[num] += 1;
+        }
+        else {
+            count[num] = 1;
+        }
+    }
+    var maxiCount = 0;
+    var frequentValue = null;
+    for (var key in count) {
+        if (count[key] > maxiCount) {
+            maxiCount = count[key];
+            frequentValue = key;
+        }
+    }
+    return frequentValue;
+}
+console.log(mostFrequent(["chosen", "rised", "doe", "rised"]));

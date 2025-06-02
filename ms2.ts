@@ -214,3 +214,30 @@ function countOccurrences(arr:string[]): Record<string, number>{
     return result;
   }
   console.log(removeDuplicates([1, 2, 3, 1, 2, 3]));
+
+  //challenge 16:Most Frequent
+function mostFrequent(arr:string[]) {
+    let count: Record<string, number> = {};
+  
+    for (let i = 0; i < arr.length; i++) {
+      let num = arr[i];
+  
+      if (count[num]) {
+        count[num] += 1;
+      } else {
+        count[num] = 1;
+      }
+    }
+    let maxiCount = 0;
+    let frequentValue = null;
+  
+    for (let key in count) {
+      if (count[key] > maxiCount) {
+        maxiCount = count[key];
+        frequentValue = key;
+      }
+    }
+    return frequentValue;
+  }
+  console.log(mostFrequent(["chosen", "rised", "doe", "rised"]));
+  
