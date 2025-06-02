@@ -94,3 +94,13 @@ function fizzBuzzCheck(number) {
         return number.toString();
     }
 }
+//challenge 10 :Perimeter 2
+function perimeter(shape, number) {
+    if (shape === "S") {
+        return 4 * number;
+    }
+    else if (shape === "C") {
+        return 6.28 * number;
+    }
+}
+console.log(perimeter("C", 6));

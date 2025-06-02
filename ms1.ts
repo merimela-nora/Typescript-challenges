@@ -1,5 +1,5 @@
 //challenge 1:  Return the Sum of Two Numbers
-/*function addition(){
+function addition(){
   let x:number = 6; 
    let y :number = 4;
 
@@ -92,7 +92,7 @@ function greetUser(name:string, hour:number) {
   }
 }
 console.log(greetUser("Susan", 10));
-*/
+
 
 //challenge 9 : fuzz buzz
 function fizzBuzzCheck(number:number) {
@@ -107,3 +107,13 @@ function fizzBuzzCheck(number:number) {
   }
 }
 
+//challenge 10 :Perimeter 2
+
+function perimeter(shape:string, number:number) {
+  if (shape === "S") {
+    return 4 * number;
+  } else if (shape === "C") {
+    return 6.28 * number;
+  }
+}
+console.log(perimeter("C", 6));
