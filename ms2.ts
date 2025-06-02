@@ -86,4 +86,17 @@ function filterByLength(arr:string[], minLength:number):string[] {
   }
   console.log(filterByLength(["giraffe", "lion"], 5));
   
+  //challenge 7:sum of even numbers
+function sumEvenNumbers(arr:number[]) {
+    let sum = 0;
   
+    for (let i = 0; i < arr.length; i++) {
+      let current = arr[i];
+      if (arr[i] % 2 === 0) {
+        sum += current;
+      }
+    }
+  
+    return sum;
+  }
+  console.log(sumEvenNumbers([1, 2, 3]));
