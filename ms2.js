@@ -107,3 +107,17 @@ function average(arr) {
     return av;
 }
 console.log(average([1, 2, 3, 4]));
+// challenge 10 : count truthy
+function countTruthy(value) {
+    var count = 0;
+    for (var key in value) {
+        if (value[key]) {
+            count++;
+        }
+    }
+    return count;
+}
+var take = {
+    name: true,
+};
+console.log(countTruthy(take));

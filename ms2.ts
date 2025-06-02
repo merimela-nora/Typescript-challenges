@@ -132,3 +132,21 @@ function average(arr:number[]) {
   }
   console.log(average([1, 2, 3, 4]));
   
+  // challenge 10 : count truthy
+
+function countTruthy(value:Record<string, boolean>):number {
+    let count = 0;
+  
+    for (let key in value) {
+      if (value [key]) {
+        count++;
+      }
+    }
+    return count;
+  }
+  const take = {
+  name: true ,
+
+  };
+  
+  console.log(countTruthy(take));
