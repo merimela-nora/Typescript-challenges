@@ -183,3 +183,18 @@ function linearSearchAll(arr:number[], value:number):number[]{
     return result;
   }
   console.log(linearSearchAll([1, 2, 3, 4,7], 7));
+
+  //challenge 14:Count Occurrences
+function countOccurrences(arr:string[]): Record<string, number>{
+    let count: Record<string, number> = {}
+  
+    for (let i = 0; i < arr.length; i++) {
+      if (count[arr[i]]) {
+        count[arr[i]] += 1;
+      } else {
+        count[arr[i]] = 1;
+      }
+    }
+    return count;
+  }
+  console.log(countOccurrences(["string", "banana", "banana"]));
