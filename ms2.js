@@ -8,3 +8,13 @@ function sumOfPositives(arr) {
     return sum;
 }
 console.log(sumOfPositives([6, 3, 4]));
+//challenge 2: Find Maximum Value
+function findMax(arr) {
+    var max = arr[0];
+    for (var i = 1; i < arr.length; i++)
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    return max;
+}
+console.log(findMax([3, 4, 6]));
