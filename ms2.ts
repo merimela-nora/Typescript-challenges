@@ -146,7 +146,16 @@ function countTruthy(value:Record<string, boolean>):number {
   }
   const take = {
   name: true ,
-
   };
-  
   console.log(countTruthy(take));
+
+  //challenge 11: Linear Search
+function linearSearch(arr:string[], value:string):number {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === value) {
+        return i;
+      }
+    }
+    return -1;
+  }
+  console.log(linearSearch(["banana", "mango", "orange"], "orange"));
