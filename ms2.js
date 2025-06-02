@@ -166,3 +166,15 @@ function countOccurrences(arr) {
     return count;
 }
 console.log(countOccurrences(["string", "banana", "banana"]));
+//challenge 15:Remove Duplicates
+function removeDuplicates(arr) {
+    var result = [];
+    for (var i = 0; i < arr.length; i++) {
+        var num = arr[i];
+        if (result.indexOf(num) === -1) {
+            result.push(num);
+        }
+    }
+    return result;
+}
+console.log(removeDuplicates([1, 2, 3, 1, 2, 3]));

@@ -198,3 +198,19 @@ function countOccurrences(arr:string[]): Record<string, number>{
     return count;
   }
   console.log(countOccurrences(["string", "banana", "banana"]));
+
+
+//challenge 15:Remove Duplicates
+  function removeDuplicates(arr:number[]):number[]{
+    let result:number[] = [];
+  
+    for (let i = 0; i < arr.length; i++) {
+      let num = arr[i];
+  
+      if (result.indexOf(num) === -1) {
+        result.push(num);
+      }
+    }
+    return result;
+  }
+  console.log(removeDuplicates([1, 2, 3, 1, 2, 3]));
