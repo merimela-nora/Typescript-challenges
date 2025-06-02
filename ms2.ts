@@ -24,3 +24,22 @@ function findMax(arr: number[]) {
     return max;
   }
   console.log(findMax([5, 3, 6]));
+
+  //challenge 3: election winner
+function findWinner(arr: { name: string; votes: number }[]) {
+    let high = arr[0];
+  
+    for (let i = 0; i < arr.length; i++)
+      if (arr[i].votes > high.votes) {
+        high = arr[i];
+      }
+    return high;
+  }
+  console.log(
+    findWinner([
+      { name: "grace", votes: 50 },
+      { name: "caleb", votes: 75 },
+      { name: "max", votes: 65 },
+    ]),
+  );
+  
