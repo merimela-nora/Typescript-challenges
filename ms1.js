@@ -133,3 +133,14 @@ function factorial(n) {
     return result;
 }
 console.log(factorial(6));
+// challenge 14: Multiple Sum
+function sumMultiples(n, divisor) {
+    var sum = 0;
+    for (var i = 1; i <= n; i++) {
+        if (i % divisor === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumMultiples(7, 5));
