@@ -124,3 +124,12 @@ function powerUp(num, times) {
     return result;
 }
 console.log(powerUp(6, 3));
+// challenge 13:Factorial Calculator
+function factorial(n) {
+    var result = 1;
+    for (var i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+console.log(factorial(6));

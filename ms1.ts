@@ -142,3 +142,15 @@ function powerUp(num:number, times:number) {
   return result;
 }
 console.log(powerUp(6, 3));
+
+// challenge 13:Factorial Calculator
+
+function factorial(n:number) {
+  let result = 1;
+
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorial(6));
