@@ -32,3 +32,13 @@ console.log(findWinner([
     { name: "caleb", votes: 75 },
     { name: "max", votes: 65 },
 ]));
+//challenge 4: Longest word
+function findLongestWord(arr) {
+    var long = arr[0];
+    for (var i = 1; i < arr.length; i++)
+        if (arr[i].length > long.length) {
+            long = arr[i];
+        }
+    return long;
+}
+console.log(findLongestWord(["grape", "tomato", "banana"]));
