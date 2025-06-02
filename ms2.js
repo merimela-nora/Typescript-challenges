@@ -42,3 +42,16 @@ function findLongestWord(arr) {
     return long;
 }
 console.log(findLongestWord(["grape", "tomato", "banana"]));
+//challenge 5:  Count Properties
+function countProperties(value) {
+    var count = 0;
+    for (var key in value) {
+        count = count + 1;
+    }
+    return count;
+}
+var value = {
+    name: "caro",
+    age: 30,
+};
+console.log(countProperties(value));
