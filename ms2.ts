@@ -69,4 +69,21 @@ function findLongestWord(arr:{ length: number }[]) {
   };
   
   console.log(countProperties(value));
+
+  
+//challenge 6:Filter by Length
+function filterByLength(arr:string[], minLength:number):string[] {
+    let result = [];
+  
+    for (let i = 0; i < arr.length; i++) {
+      let current = arr[i];
+  
+      if (current.length >= minLength) {
+        result.push(current);
+      }
+    }
+    return result;
+  }
+  console.log(filterByLength(["giraffe", "lion"], 5));
+  
   

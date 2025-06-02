@@ -55,3 +55,15 @@ var value = {
     age: 30,
 };
 console.log(countProperties(value));
+//challenge 6:Filter by Length
+function filterByLength(arr, minLength) {
+    var result = [];
+    for (var i = 0; i < arr.length; i++) {
+        var current = arr[i];
+        if (current.length >= minLength) {
+            result.push(current);
+        }
+    }
+    return result;
+}
+console.log(filterByLength(["giraffe", "lion"], 5));
