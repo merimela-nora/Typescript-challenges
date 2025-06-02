@@ -159,3 +159,14 @@ function linearSearch(arr:string[], value:string):number {
     return -1;
   }
   console.log(linearSearch(["banana", "mango", "orange"], "orange"));
+
+  //challenge 12:Reverse Linear Search
+function reverseLinearSearch(arr:string[], value:string):number {
+    for (let i = arr.length - 1; i >= 0; i++) {
+      if (arr[i] === value) {
+        return i;
+      }
+    }
+    return -1;
+  }
+  console.log(reverseLinearSearch(["banana", "apple", "tomato"], "tomato"));
