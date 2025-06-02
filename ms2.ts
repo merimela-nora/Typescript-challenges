@@ -170,3 +170,16 @@ function reverseLinearSearch(arr:string[], value:string):number {
     return -1;
   }
   console.log(reverseLinearSearch(["banana", "apple", "tomato"], "tomato"));
+
+  //challenge 13:Linear Search All Indices
+function linearSearchAll(arr:number[], value:number):number[]{
+    let result: number[] = [];
+  
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === value) {
+        result.push(i);
+      }
+    }
+    return result;
+  }
+  console.log(linearSearchAll([1, 2, 3, 4,7], 7));
