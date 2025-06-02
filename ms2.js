@@ -79,3 +79,31 @@ function sumEvenNumbers(arr) {
     return sum;
 }
 console.log(sumEvenNumbers([1, 2, 3]));
+//challenge 8:Difference Between Sum of Even and Odd Numbers
+function differenceEvenOdd(arr) {
+    var oddSum = 0;
+    var evenSum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenSum += arr[i];
+        }
+        else {
+            oddSum += arr[i];
+        }
+    }
+    return evenSum - oddSum;
+}
+console.log(differenceEvenOdd([1, 2, 3, 4]));
+//challenge 9: average
+function average(arr) {
+    if (arr.length === 0) {
+        return 0;
+    }
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    var av = sum / arr.length;
+    return av;
+}
+console.log(average([1, 2, 3, 4]));
